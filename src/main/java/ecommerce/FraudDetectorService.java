@@ -2,12 +2,8 @@ package ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.apache.kafka.common.serialization.StringDeserializer;
-import java.time.Duration;
-import java.util.Collections;
 import java.util.Properties;
-import java.util.UUID;
+
 
 public class FraudDetectorService {
 
@@ -33,8 +29,6 @@ public class FraudDetectorService {
         }
         System.out.println("Ordem foi processada");
     }
-
-
 
 
     private static Properties properties(){

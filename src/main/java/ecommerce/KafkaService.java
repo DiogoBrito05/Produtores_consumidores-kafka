@@ -9,6 +9,7 @@ import java.util.Properties;
 import java.util.UUID;
 
 class KafkaService {
+
     private final KafkaConsumer<String, String> consumer;
     private final ConsumerFunction parse;
 
